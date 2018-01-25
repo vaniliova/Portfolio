@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>I LIKE FRONTEND</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway|Yesteryear" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="script/app.js"></script>
   <link rel="stylesheet" href="fontello/css/fontello.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,19 +17,23 @@
       <div class="main__box">
         <nav class="main__box__nav">
           <div class="main__box__nav__logo"><a href="#">i like frontend</a></div>
-          <button class="main__box__nav__hamburger"></button>
+          <div class="main__box__nav__hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
           <div class="main__box__nav__menu">
             <ul class="main__box__nav__menu__list">
-              <li class="main__box__nav__menu__list--item"><a href="#">O mnie</a></li>
-              <li class="main__box__nav__menu__list--item"><a href="#">Projekty</a></li>
-              <li class="main__box__nav__menu__list--item"><a href="#">Kontakt</a></li>
+              <li class="main__box__nav__menu__list--item"><a href="#about">O mnie</a></li>
+              <li class="main__box__nav__menu__list--item"><a href="#projects">Projekty</a></li>
+              <li class="main__box__nav__menu__list--item"><a href="#contact">Kontakt</a></li>
               <li class="main__box__nav__menu__list--contact"><a href="#">660.046.696</a></li>
               <li class="main__box__nav__menu__list--social"><a href="https://www.linkedin.com/in/dagmara-lewandowska/">LinkedIn</a></li>
               <li class="main__box__nav__menu__list--social"><a href="https://github.com/vaniliova">GitHub</a></li>
             </ul>
           </div>
         </nav>
-        <header class="main__box__header">
+        <header class="main__box__header" id="about">
           <h1 class="main__box__header--name">dagmara lewandowska.</h1>
           <h2 class="main__box__header--info"> junior front-end developer</h2>
         </header>
@@ -41,12 +47,12 @@
       <h2 class="art__header__more">więcej?</h2>
       <a href="#" class="art__header__more--text">Zaproś mnie na rozmowę</a>
     </article>
-    <section class="sec__projects">
+    <section class="sec__projects" id="projects">
       <a class="sec__projects__1" href="https://vaniliova.github.io/SoapSearchAngular/"><span class="reveal">SoapSearch</span></a>
       <a class="sec__projects__2" href="https://vaniliova.github.io/SitOnChair_page/"><span class="reveal">SitOnChair</span></a>
       <a class="sec__projects__3" href="https://github.com/vaniliova/Fiszkoteka"><span class="reveal">Fiszkoteka</span></a>
     </section>
-    <section class="sec__contact">
+    <section class="sec__contact" id="contact">
       <h2 class="sec__contact--header">Skontaktuj się ze mną.</h2>
       <p class="sec__contact--tel">660.046.696</p>
       <p class="sec__contact--email">vanila.dl@gmail.com</p>
@@ -61,6 +67,6 @@
   </div>
 
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script src="script/app.js"></script>
+  <script src="script/scrollReveal.js"></script>
 </body>
 </html>

@@ -1,6 +1,31 @@
+$(document).ready(function() {
+  //hamburger button
+  $('.main__box__nav__hamburger').click(function() {
+    $('.main__box__nav__menu').toggleClass('active');
+    $(this).toggleClass('close');
+    $('.art').toggleClass('hide');
+    $('.sec__projects').toggleClass('hide');
+    $('.sec__contact').toggleClass('hide');
+    $('.footer').toggleClass('hide');
+  })
 
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.reveal', { duration: 700, delay: 100 });
-sr.reveal('.sec__contact--header', { duration: 500, origin: 'top' });
-sr.reveal('.sec__contact--tel', { duration: 500, origin: 'top' });
-sr.reveal('.sec__contact--email', { duration: 500, origin: 'top' });
+  //List elements on click
+  var listItem = $('.main__box__nav__menu__list--item');
+  var hasBeenClicked = false;
+
+  listItem.click(function() {
+    hasBeenClicked = true;
+    if (hasBeenClicked === true) {
+      $('.main__box__nav__menu').toggleClass('active');
+      $('.main__box__nav__hamburger').toggleClass('close');
+      $('.art').toggleClass('hide');
+      $('.sec__projects').toggleClass('hide');
+      $('.sec__contact').toggleClass('hide');
+      $('.footer').toggleClass('hide');
+    }
+  })
+
+
+
+//end of documentReady
+})
