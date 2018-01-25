@@ -7,6 +7,9 @@ $(document).ready(function() {
     $('.sec__projects').toggleClass('hide');
     $('.sec__contact').toggleClass('hide');
     $('.footer').toggleClass('hide');
+
+    $('.main__box__nav').toggleClass('nav-inverse');
+    $('.line').toggleClass('line-inverse');
   })
 
   //List elements on click
@@ -22,6 +25,8 @@ $(document).ready(function() {
       $('.sec__projects').toggleClass('hide');
       $('.sec__contact').toggleClass('hide');
       $('.footer').toggleClass('hide');
+      $('.main__box__nav').toggleClass('nav-inverse');
+      $('.line').toggleClass('line-inverse');
     }
   })
 
