@@ -49,7 +49,7 @@ body, h1, h2, ul {
 .main__box__nav__hamburger {
   min-width: 30px;
   height: 20px;
-  margin: 45px 15px;
+  margin: 45px;
   position: relative;
 }
 .line {
@@ -101,7 +101,7 @@ body, h1, h2, ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 .main__box__nav__menu__list--item, .main__box__nav__menu__list--contact {
   padding: 10px;
@@ -109,16 +109,16 @@ body, h1, h2, ul {
 .main__box__nav__menu__list--item a, .main__box__nav__menu__list--social a {
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
   font-weight: 900;
 }
 .main__box__nav__menu__list--contact {
-  font-size: 45px;
+  font-size: 40px;
   color: #fff;
 }
 .main__box__nav__menu__list--social a {
-  font-size: 20px;
+  font-size: 18px;
 }
 .main__box__nav__menu__list--item a:hover, .main__box__nav__menu__list--contact:hover, .main__box__nav__menu__list--social a:hover {
   color: grey;
@@ -140,6 +140,9 @@ body, h1, h2, ul {
   padding-left: 30px;
 }
 .art {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column; */
   background: #fafafa;
   padding: 0 50px;
 }
@@ -207,6 +210,12 @@ div.art__header__info--text {
   display: block;
   padding: 30px 50px;
 }
+.sec__projects__1, .sec__projects__2, .sec__projects__3 {
+  height: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
 .sec__projects__1 {
   height: 100vw;
   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/soap1.jpg');
@@ -272,7 +281,8 @@ div.art__header__info--text {
 .footer__logo--inspiration {
   color: #333;
   font-size: 14px;
-  margin-top: 45px;
+  margin-top: 42px;
+  padding-right: 10px;
 }
 .footer__logo--inspirationLogo {
   width: 100px;
