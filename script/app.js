@@ -13,7 +13,7 @@ $(document).ready(function() {
   })
 
   //List elements on click
-  var listItem = $('.main__box__nav__menu__list--item');
+  var listItem = $('.main__box__nav__menu__list__item');
   var hasBeenClicked = false;
 
   listItem.click(function() {
