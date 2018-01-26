@@ -7,7 +7,8 @@
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body, h1, h2, ul {
@@ -215,40 +216,40 @@ body, h1, h2, ul {
 
 .sec__projects__1 {
   height: 100vw;
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/soap.jpg');
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/soap1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .sec__projects__1:hover {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/soap.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/soap1.jpg');
   background-size: cover;
 }
 
 .sec__projects__2 {
   height: 100vw;
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/chair.jpg');
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/chair1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .sec__projects__2:hover {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/chair.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/chair1.jpg');
   background-size: cover;
 }
 
 .sec__projects__3 {
   height: 100vw;
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/soap.jpg');
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/fiszkoteka1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .sec__projects__3:hover {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/soap.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/fiszkoteka1.jpg');
   background-size: cover;
 }
 
@@ -284,6 +285,9 @@ body, h1, h2, ul {
   color: #333;
   font-size: 14px;
   line-height: 100px;
+}
+.footer__logo--inspirationLogo {
+  display: none;
 }
 
 .icon-linkedin-circled, .icon-github-circled {
@@ -322,7 +326,6 @@ body, h1, h2, ul {
   }
   .nav-inverse {
     background: transparent;
-    transition: .5s background linear;
   }
   .main__box__nav__logo {
     width: 250px;
@@ -340,7 +343,7 @@ body, h1, h2, ul {
   .main__box__nav__menu__list {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 30px 30px 0;
   }
   .main__box__nav__menu__list--item a {
     color: #fff;
@@ -396,6 +399,7 @@ body, h1, h2, ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: #ececec;
   }
   .col4 {
     display: flex;
@@ -406,7 +410,12 @@ body, h1, h2, ul {
     display: block;
     font-family: 'Yesteryear', cursive;
     font-size: 40px;
-    padding:30px 50px;
+    padding:30px 50px 10px;
+  }
+  .footer__logo--inspirationLogo {
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
   }
   .icon-github-circled {
     margin-right: 20px;
